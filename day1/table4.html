@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>最规整的表格写法</title>
+</head>
+<body>
+	<h1>最规整的表格写法</h1>
+	<!-- 表格里面是有 标题 有表头 表body 表的footer 这些都是从语义化的角度出发 -->
+
+
+	<!-- 语义化：就是为了使得网站的内容容易被搜索引擎进行收录 -->
+	<table border="1">
+		<!-- 标题 -->
+		<caption><h2>xxx公司的销售统计表</h2></caption>
+
+		<!-- 表头里面的单元格列 使用th -->
+		<!--  3列 -->
+		<thead>
+			<tr>
+				<th>序号</th>
+				<th>用户名</th>
+				<th>工资</th>
+			</tr>
+
+		</thead>
+
+		<tbody>
+
+			<tr>
+				<td>1</td>
+				<td>曹阳</td>
+				<td>32000</td>
+			</tr>
+			
+			<tr>
+				<td>2</td>
+				<td>李阳</td>
+				<td>32000</td>
+			</tr>
+			
+			<tr>
+				<td>3</td>
+				<td>马阳</td>
+				<td>32000</td>
+			</tr>
+			
+			<tr>
+				<td>4</td>
+				<td>安阳</td>
+				<td>32000</td>
+			</tr>
+			
+		</tbody>
+		
+		<tfoot>
+			<tr>
+				<td rowspan="3">总计：</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>	

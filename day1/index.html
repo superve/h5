@@ -1,0 +1,134 @@
+<!-- html:5 tab键 注意：在以后的开发生涯中，凡是遇到写代码都要将输入法切换为英文状态输入-->
+<!DOCTYPE html>
+<!-- DOCTYPE 这个叫做文档声明，主要是我们的HTML在发展过程中，也是经历了版本的迭代，从0到1 是一个过程，从1到10也是一个过程。 主要是用于标记我们的网页使用的是哪一个版本，告诉浏览器我们的网页使用的是哪个版本开发的，浏览器你要按照对应的版本进行HTML标签的解析。-->
+
+<!-- 从0到1指的是 有提姆博纳斯李发明HTML这门标记语言。 上世纪90年代左右 html 1.0版本 -->
+<!-- 只是在原有上面新增内容，出现 html 2.0 html3.0 -->
+
+<!-- 注意：最为大众所知的 html4版本 html:xs版本 -->
+
+<!-- 现在开发使用最多版本：html5版本，俗称 h5，但是需要注意，h5不仅仅只是一个 html5版本，h5是一类新技术的通俗（html5版本的发布，同时还有css3的发布）由于这两个版本的发布引入很多新的特性 -->
+<!-- 招聘：h5开发工程师 -->
+
+
+<!-- 才算网页的组成开发 -->
+<!-- html标签的特点：  -->
+<!-- 1.一般来说是成对出现 -->
+<!-- html标签：<标签名>  </标签名> -->
+<!-- 2. 在开始标签里面以 key="value" 形式的东西我们称之为属性，属性是需要写在开始标签里面，并且属性是可以存在多个的，属性之间不能重复，多个属性之间使用空格隔开，标签不一样，拥有的属性是不同的。-->
+
+<!-- html 标签，一般称之为网页的根标签，一个网页里面只能存在一个-->
+<!-- lang 是 language 语言单词的缩写。 value 值 en 是 english 英语的简写 -->
+<!-- 实际的意义：就是告诉浏览器我们的当前网页是一个什么语言类型（中文、英语、日文、德文）的网站。浏览器会根据这个属性里面的属性值，决定如何显示，例如我们的浏览器是一个中文浏览器。如果看到的是一个 value 是 en，首次访问的时候，浏览器自动的弹出一个提示，是否需要翻译？ -->
+
+<!-- zh_CN 代表的是中文类型的网站，一般写这个就可以，也可以不写。 -->
+
+
+<!-- 3. html标签的结构组成： a. 嵌套 2. 平级 -->
+
+ <html lang="zh_CN">
+<!--<html lang="en">-->
+	<!-- head标签的实际意义就是为浏览器设置一些信息，或者说是告诉浏览器如何操作网页  -->
+	<head>
+		<!-- meta 标签，一般我们称之为 元标签 元信息-->
+		<!-- 和之前的 双标签不一样。这种标签只有开始，没有结束。完整写法 -->
+		<!-- <meta charset="UTF-8">内容</meta> -->
+		<!-- 转换为 ： 如果一个标签是单标签，我们需要在 开始标签的后面加上/ 代表这是结束-->
+		<!-- <meta charset="UTF-8" /> -->
+		<!-- 由于 html5的包容性非常的好，使得 / 也可以不写。 如果写了也不算错。 -->
+
+		<meta charset="UTF-8">
+
+		<!-- 属性：charset 翻译过来叫做字符集。 -->
+		<!-- 什么是字符集？ 为什么会出现字符集？常见的字符集有哪些？  -->
+		<!-- 电脑底层都是 01 二进制 为什么电脑使用的是二进制，而不是十进制？ 电气化设备 使用电 电压  0-12 世界是数字组成的 -->
+		<!-- 日常信息转换为电脑的01存储的过程：编码 -->
+		<!-- 英语： 26个字母*2 特殊的符号，在计算机里面要使用多少个组合才能表示完 -->
+		<!-- 01 1个二进制我们称之为1个位 bit 一个位2个变化，如果要显示多个信息，就需要使用多个位进行显示。1 2  2 4  3 8  8个 256个位，这种编码的方式称之为 ASCII  -->
+
+		<!-- 中文环境 ASCII ，最早适合中文 gbk 国标码 big5 -->
+
+		<!-- 后面出了一个统一编码：把世间所有的字符全部放在一起编码： unicode （Unicode的变种码，针对不同的字符可以使用不同大小的位数编码，例如 英文使用8位，8个位称之为一个字节 8bit = 1byte） 中文：3个字节2^24 -->
+		<!-- UTF-8 utf-16等 -->
+
+		<!-- 日常开发：Unicode 里面的就是 utf-8。 1个英文1字节，1个汉字3个字节。 -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- 主要是用于做移动端开发，也就是手机浏览器上面的web开发。 -->
+
+
+		<title>诺客科技有限公司-网站首页</title>
+
+		<!-- 这个标签用于控制浏览器选项卡上面的文字信息 -->
+	</head>
+
+	<body>
+		<!-- 所有要在浏览器里面显示给用户看的信息，都要写在body里面。 身体 -->
+		<!-- body 里面可以写什么？ -->
+		<!-- 1. 普通的文本，就是我们写的文字 -->
+		<!-- 2. 可以写 html 标签 -->
+		
+		<!-- 3. 注释 是程序猿用来记录自己的开发的历程。方便程序日常回顾 -->
+		<!-- 程序 bug 小虫子，在开发过程中，由于开发不能做到尽善尽美，总有一些地方可能是当时没有考虑到的，在日后使用的功能，出现了与之前预期不符合的功能，一般我们称之为bug。 -->
+		<!-- 修改 bug 的过程我们称为 debug 调试 bug -->
+
+		<!-- 注释方便日后进行debug -->
+
+		<!-- 提纲挈领的作用，统筹 标识 这个网页里面的主题内容 -->
+
+		<!-- <h1>提纲挈领的作用，统筹 标识 这个网页里面的主题内容</h1> -->
+		<h1>挖掘机_日立百年企业_详情请点击日立网站名企</h1>
+
+		<h2>次级标题</h2>
+		<h2>次级标题</h2>
+		<h2>次级标题</h2>
+		<h2>次级标题</h2>
+		<h2>次级标题</h2>
+
+		<h3>次次级标题</h3>
+		<h3>次次级标题</h3>
+		<h3>次次级标题</h3>
+		<h3>次次级标题</h3>
+		<h3>次次级标题</h3>
+		
+		<h4>标题</h4>
+		<h5>标题</h5>
+		<h6>标题</h6>
+
+		<!-- 标题标签 6个 常用的前三个 h1 一个网页只能使用一个 h2 h3 可以使用多次 -->
+		<!-- sublime -->
+		<!-- 标签名称 tab 键 -->
+		<!-- 标签名 tab 键自动补齐 这个是 sublime 里面 emmet 插件提供的功能 -->
+		<!-- 绝大部分的代码编辑器自带该功能 这个功能不仅仅只是生成一个标签，还可以有很多功能。 -->
+		<!-- h1 标签在页面里面尽量只用一个 -->
+		<!-- 注意： html 标签的实质就是给文本增加语义化。 -->
+
+		<!-- 语义化主要是为了日后网站上线后，方便我们的搜索引擎进行收录。 -->
+		<!-- 百度一下 通过 baidu 网站进行内容的搜索，检索，提供一些信息 -->
+
+		 <!-- lorem tab 键 -->
+		 <!-- lorem数字 tab键 生成指定字符个数的文本 -->
+		 <!-- lorem4  tab键-->
+		 <!-- p 翻译 段落的意思 -->
+		 <!-- 使用p之后，段落之间是存在一定的空隙，为了美观和语义化 -->
+
+		 <!-- p 段落默认是左对齐 -->
+		 <!-- p 段落存在 align 属性控制文本的对齐方式 -->
+		 <!-- 1. 默认 左对齐 右对齐 居中对齐 两端对齐 -->
+		 <p align="left">inventore consectetur quaerat commodi explicabo deserunt fugiat vero minus doloremque quo esse delectus autem, earum totam mollitia ab. Aut magnam iusto nemo minus reiciendis accusantium placeat molestias atque nesciunt</p>
+
+
+		 <p align="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequatur quam distinctio, in veritatis ipsum nesciunt ullam laboriosam repudiandae</p> 
+
+
+		 <p align="center"> 居中对齐 perferendis ullam totam eos cumque natus voluptatem dolore at, id maiores ratione ducimus numquam adipisci, sunt? Facilis aperiam soluta pariatur, ea, deserunt error eius ipsum quasi. Neque libero debitis dolor reprehenderit provident et voluptates error vel deleniti enim eligendi natus dicta molestias corporis odio doloremque, possimus! Molestias, omnis doloribus illum. Iste, quod.</p>
+
+
+		 <p align="justify">perferendis ullam totam eos cumque natus voluptatem dolore at, id maiores ratione ducimus numquam adipisci, sunt? Facilis aperiam soluta pariatur, ea, deserunt error eius ipsum quasi. Neque libero debitis dolor reprehenderit provident et voluptates error vel deleniti enim eligendi natus dicta molestias corporis odio doloremque, possimus! Molestias, omnis doloribus illum. Iste, quod.</p>
+
+		 <!-- 注意1： html 里面对换行和缩进是不敏感的  如果我们需要让HTML代码对换行或者tab缩进敏感，那么我们就需要使用到 html 提供的一系列的标签。 -->
+
+		 <!-- 文本相关： 1. 标签  2. 段落 -->
+
+	</body>
+</html>

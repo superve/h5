@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>图片显示</title>
+</head>
+<body>
+	<!-- img 用于在网页里面显示图片 单标签 src属性 用于标识我们要显示图片的地址 -->
+	<!-- 1. 相对地址：和网页在一起的图片信息 2. 绝对地址 以 http:// https:// 协议引入的图片信息-->
+
+	<!-- 相对地址（路径） -->
+	<!-- imgs/fj2.jpg 这种写法一般叫做缺省写法，缺了一个 ./ -->
+	<!-- . 代表的是当前目录，当前文件夹 / 目录分隔符 -->
+	<!-- ../ 代表的是当前目录的上级目录 -->
+
+	<!-- D:\wzh5\codes\day1\imgs -->
+
+	<!-- alt 属性用于在图片丢失，或者无法加载的时候，给用户的一个提示信息 -->
+	<!-- title 属性 -->
+	<!-- 图片大小  1. 本身存储占据大小 字节 2. 图片的宽高 width height 单位可以不写就是 px 像素 注意：如果宽高只写一个，另外一个会等比缩放 -->
+	<!-- 960 * 600 -->
+	<!-- 注意：如果宽高同时写，那么以写的宽高为准 可能出现 拉伸的效果，图片变形-->
+	<img src="imgs/fj22.jpg" width="480" alt="风景图片" title="用于在鼠标移入到图片上面时候的提示信息"><img src="imgs/fj22.jpg"  height="300" alt="风景图片" title="用于在鼠标移入到图片上面时候的提示信息">
+
+	<!-- 缩放：垂直显示 300 强行显示50 -->
+	<img src="imgs/fj22.jpg" width="480"  height="50" alt="风景图片" title="用于在鼠标移入到图片上面时候的提示信息">
+
+
+	<img src="imgs/fj22.jpg" alt="风景图片" title="用于在鼠标移入到图片上面时候的提示信息">
+	<img src="./imgs/fj22.jpg" alt="风景图片" title="在开发的时候，一般建议title 写上，SEO 搜索引擎优化，以目前的技术来说，各大搜索引擎还没有很好的办法去识别图片里面完整的信息。">
+	<!-- 人工智能 图片识别  刷脸支付 车牌识别 -->
+
+	<!-- 绝对地址（路径） -->
+	<img src="https://www.baidu.com/img/540x258_2179d1243e6c5320a8dcbecd834a025d.png" alt="百度引入的图片">
+
+
+
+
+
+</body>
+</html>

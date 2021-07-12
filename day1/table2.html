@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>非规则表格-常说表格的合并-单元格的合并</title>
+</head>
+<body>
+	
+	<!-- 3x2 -->
+	<!-- <table>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr></tr>
+		<tr></tr>
+	</table> -->
+
+	<!-- emmet 插件-->
+	<!-- table tab 键 补齐-->
+	<!-- table>(tr>td*2)*3  tab 键-->
+	<!-- 希望默认填充一点内容 -->
+	<!-- $ 代表一位0-9数字 -->
+
+	<!-- table>(tr>td{$$}*2)*3 -->
+	<table border="1">
+		<!-- 需求：第一行的 两个单元格合并成一个整体 -->
+		<tr  colspan="2">
+			<td>1</td>
+		</tr>
+
+		<!-- 需求： 第二行的第一个单元格 和第三行的第一个单元格合并，称为一个整体 -->
+		<tr rowspan="2">
+			<td>2</td>
+		</tr>
+		<tr>
+			
+			<td>2</td>
+		</tr>
+	</table>
+</body>
+</html>
